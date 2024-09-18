@@ -34,10 +34,10 @@ const Footer = () => {
                         <div className="col-md-3 footer-section">
                             <h3>Policies</h3>
                             <ul>
-                                <li><Link to="/terms">Terms & Condition</Link></li>
-                                <li><Link to="/shipping">Shipping & Delivery</Link></li>
-                                <li><Link to="/privacy">Privacy Policy</Link></li>
-                                <li><Link to="/return">Return & Refund Policy</Link></li>
+                                <li><Link to="/terms-condition">Terms & Condition</Link></li>
+                                <li><Link to="/shipping-delivery">Shipping & Delivery</Link></li>
+                                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                                <li><Link to="/return-refund">Return & Refund Policy</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-3 footer-section">

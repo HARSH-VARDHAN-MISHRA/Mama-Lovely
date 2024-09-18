@@ -11,7 +11,6 @@ import Shop from './pages/Shop/Shop';
 import ProductBySubCategory from './pages/ProductPage/ProductBySubCategory';
 import BlogPage from './pages/BlogPage/BlogPage';
 import SupportPage from './pages/SupportPage/SupportPage';
-// import Login from './components/Auth/Login';
 import CategoryPage from './pages/CategoryPage/CategoryPage';
 import CartPage from './pages/CartPage/CartPage';
 import Checkout from './pages/CartPage/Checkout';
@@ -23,6 +22,10 @@ import OtpSignUp from './components/Login/OtpSignUp';
 import SubCategoryByCategory from './pages/ProductPage/SubCategoryByCategory';
 import SingleBlogPage from './pages/BlogPage/SingleBlogPage';
 import Profile from './pages/Profile/Profile';
+import TermCondition from './pages/Policy/TermCondition';
+import ShippingDelivery from './pages/Policy/ShippingDelivery';
+import PrivacyPolicy from './pages/Policy/PrivacyPolicy';
+import ReturnRefund from './pages/Policy/ReturnRefund';
 
 function App() {
   return (
@@ -45,9 +48,13 @@ function App() {
 
         <Route path="/our-products/:category/:subCategory/:productName" element={<ProductPage />} />
 
-
+        {/* ==== Privacy  ====  */}
+        <Route path='/terms-condition' element={<TermCondition/>} /> 
+        <Route path='/shipping-delivery' element={<ShippingDelivery/>} /> 
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>} /> 
+        <Route path='/return-refund' element={<ReturnRefund/>} /> 
+        
         {/* ==== Authentication ====  */}
-        {/* <Route path='/login' element={<Login/>} /> */}
         <Route path='/profile' element={<Profile/>} /> 
 
         <Route path='/login' element={<Login />} />
