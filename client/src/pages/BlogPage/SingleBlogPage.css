@@ -67,15 +67,23 @@
     padding: 0;
 }
 
+
 .blog-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    text-decoration: none ;
 }
 
 .blog-item:hover {
     transform: scale(1.05);
+}
+
+.blog-item .blog-item-title{
+    color: var(--color-blue-dark);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .blog-thumbnail {

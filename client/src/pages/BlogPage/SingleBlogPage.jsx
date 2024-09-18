@@ -95,12 +95,18 @@ const SingleBlogPage = () => {
                                 ) : (
                                     <p>No blogs available.</p>
                                 )}
-                                <Link to="/blogs" className="btn btn-primary mt-3">View More</Link>
+                                <div className="col text-center">
+                                    <Link to="/blogs" className="text-center m-auto view-more-container mt-3 ">
+                                        <button className="viewMoreBtn py-2" >
+                                            View All
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
 
                             {/* Follow Us Section */}
                             <section className="follow-us">
-                                <h3 className="sidebar-title">Follow Us</h3>
+                                <h3 className="sidebar-title text-start">Follow Us</h3>
                                 <div className="social-links">
                                     <a href="https://facebook.com" className="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
                                         <i className="fab fa-facebook-f"></i> Facebook
